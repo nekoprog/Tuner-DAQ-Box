@@ -1,2 +1,2 @@
 # Tuner-DAQ-Box
-Car Tuning Data Logger
+Arduino UNO Car Tuning Data Logger
