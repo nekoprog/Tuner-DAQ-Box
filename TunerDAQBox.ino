@@ -9,18 +9,21 @@ unsigned long spdSensor = 0; //counts per second
 float afr = 0.0;
 
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
+	// put your setup code here, to run once:
+	Serial.begin(115200);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  wbSensor = analogRead(wbIn);
-  revSensor = pulseIn(revIn,HIGH); //todo
-  spdSensor = pulseIn(spdIn,HIGH); //todo
-  delay(100);
-  afr = (wbSensor*(wbLo/1023.0))+(wbHi-wbLo);
-  Serial.println(afr); //todo
-  Serial.println(revSensor);
-  Serial.println(spdSensor);
+	// put your main code here, to run repeatedly:
+	wbSensor = analogRead(wbIn);
+	//revSensor = pulseIn(revIn,HIGH); //todo
+	//spdSensor = pulseIn(spdIn,HIGH); //todo
+	afr = (wbLo*(wbSensor/1023))+(wbHi-wbLo); //this shit won't work
+	Serial.print(afr);
+	//todo
+	Serial.print(',');
+	Serial.println(0);
+	//Serial.print(',');
+	//Serial.println(spdSensor);
+  delay(50);
 }
