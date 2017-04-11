@@ -17,7 +17,7 @@ stream = p.open(format=FORMAT,
                 input=True,
                 frames_per_buffer=CHUNK)
 
-def liveData():
+def knockData():
     plt.figure(1)
     plt.subplot(211)
     plt.xlim(0,(CHUNK*2))
@@ -26,7 +26,7 @@ def liveData():
 
 while True:
     data = np.fromstring(stream.read(CHUNK),dtype=np.int16)
-    drawnow(liveData)
+    drawnow(knockData)
     #print(data) #For debug only
     plt.pause(0.000001)
   
