@@ -7,6 +7,7 @@ TODO:
 - WB02 linear 5v input
 - RPM pulse decoder
 - KM/h decoder
+- Knock detector using microphone input
 - Realtime data stream to PC (usb/wifi/bluetooth)
 - PC graph plotting and save to CSV for future analysis
 - PC UI
