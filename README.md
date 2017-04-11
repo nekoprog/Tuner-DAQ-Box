@@ -9,7 +9,7 @@ Realtime graph from serial input (wbo2, rpm, speed sensor) and microphone input 
 
 TODO:
 - WB02 linear 5v input
-- RPM pulse decoder
+- RPM decoder
 - KM/h decoder
 - Knock detector using microphone input
 - Realtime data stream to PC (usb/wifi/bluetooth)
