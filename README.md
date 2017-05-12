@@ -15,3 +15,4 @@ TODO:
 - Realtime data stream to PC (usb/wifi/bluetooth)
 - PC graph plotting and save to CSV for future analysis
 - PC UI
+- Use VisPy, PySide, PySerial, NumPy
