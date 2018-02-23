@@ -7,7 +7,7 @@ RATE = 44100
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
-MAXAMP = 8000
+MAXAMP = 8000 #change this value to zoom in/out
 
 plt.ion()
 p = pyaudio.PyAudio()
@@ -22,7 +22,7 @@ def knockData():
     plt.figure(1)
     plt.subplot(211)
     plt.xlim(0,(CHUNK*2))
-    plt.ylim(-MAXAMP,MAXAMP) #change this value to zoom in/out
+    plt.ylim(-MAXAMP,MAXAMP)
     plt.plot(data)
 
 while True:
